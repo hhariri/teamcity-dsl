@@ -23,7 +23,7 @@ class OperatingSystemBuildType(buildParameters: BuildParameters) : BuildType() {
                 tasks = "clean build"
                 useGradleWrapper = true
                 gradleWrapperPath = ""
-                gradleParams = "-D ${buildParameters.connections}"
+                gradleParams = "-D connections=${buildParameters.connections}"
             }
         }
         triggers {
